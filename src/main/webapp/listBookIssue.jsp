@@ -1,3 +1,4 @@
+<%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@page import="com.ty.library.dto.Book"%>
 <%@page import="java.util.List"%>
 <%@page import="com.ty.library.service.BookService"%>
@@ -10,20 +11,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1 align="center">Book Database Details</h1>
-<form action="bookdatabase">
-
+<h1 align="center">Book Issue Table</h1>
 <% BookService bookService=new BookService();
  List<Book> books= bookService.getAllBooks();
 %>
-
-<table border="2px" cellpadding=22px align="center">
+<table align="center" border="2px" cellpadding=22px>
 <tr>
 <th>Book Id</th>
 <th>Book Author</th>
 <th>Book Genre</th>
 <th>Book Name</th>
-<th>Student id</th>
+<th>Issue Book</th>
+<th>Issue Book</th>
+
 
 </tr>
 <% for(Book b: books) {
@@ -34,13 +34,13 @@
 <td><%= b.getBookGenre() %></td>
 <td><%= b.getBookName() %></td>
 <td><%= b.getStudent()%></td>
+<td> <a href ="studentIdIdentification.jsp?id=<%=b.getId()%>">Issue Book </a></td>
 
 </tr>
 
 <%} %>
 </table>
 
-</form>
 
 </body>
 </html>

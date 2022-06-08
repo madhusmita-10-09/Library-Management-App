@@ -93,7 +93,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <body>
 
    <form action="liblogin" method="post"class="form-container">
-    <h1>Librarian login</h1>
+    <h1 align="center">Librarian login</h1>
 
     <label for="loginid"><b>LoginId</b></label>
     <input type="text" placeholder="Enter loginId" name="libId" required>

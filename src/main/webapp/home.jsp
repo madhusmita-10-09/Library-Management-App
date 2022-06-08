@@ -2,14 +2,14 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
+
+
+<head >
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<style >
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,24 +38,40 @@ body {
   background-color: #04AA6D;
   color: white;
 }
+
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("smita.jpg");
+
+  min-height: 580px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 </style>
 </head>
 <body>
+<div class="bg-img">
 <div class="topnav">
   <a class="active" href="#library">Library Management System</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="admin.jsp">Admin</a>
+  <a href="liblogin.jsp">Librarian</a>
+  <a href="createStudent.jsp">Student</a>
 </div>
 
-           <body>
+        <!-- <body>
         <h1>Library Home Page</h1>
         <form action="home" method="post">
         <input type ="submit" name="admin" value ="Admin"> </input> <br> <br>
         <input type ="submit" name="librarian" value ="Librarian"> </input> <br> <br>
         <input type ="submit" name="student" value ="Student"> </input> <br> <br>
         
-        </form>
-        
+        </form> --> 
+         <h1 align="center"style="color:white"style="font-size:50px;">Welcome to Central Library</h1>
 
 </style>
 </head>
